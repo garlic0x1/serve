@@ -19,13 +19,8 @@ func main() {
 	arg.MustParse(&args)
 
 	var addr = fmt.Sprintf("%s:%s", args.Host, args.Port)
+	var fileserver = http.FileServer(http.Dir(args.Dir))
 
 	log.Printf("Serving %s on http://%s\n", args.Dir, addr)
-
-	log.Fatal(
-		http.ListenAndServe(
-			addr,
-			http.FileServer(http.Dir(args.Dir)),
-		),
-	)
+	log.Fatal(http.ListenAndServe(addr, fileserver))
 }
