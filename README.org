@@ -1,0 +1,17 @@
+#+title: Serve
+
+* Usage
+#+begin_src shell
+serve --help
+#+end_src
+
+#+begin_src
+Usage: serve [--dir DIR] [--host HOST] [--port PORT]
+
+Options:
+  --dir DIR, -d DIR      directory to serve [default: .]
+  --host HOST, -a HOST   host to bind to [default: 127.0.0.1]
+  --port PORT, -p PORT   port to serve on [default: 5000]
+  --help, -h             display this help and exit
+
+#+end_src
