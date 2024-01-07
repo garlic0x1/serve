@@ -1,4 +1,4 @@
-module serve
+module github.com/garlic0x1/serve
 
 go 1.21.5
 

@@ -9,7 +9,7 @@ import (
 )
 
 type Args struct {
-	Dir  string `arg:"-d" default:"."         help:"directory to serve"`
+	Dir  string `arg:"-d" default:"./"        help:"directory to serve"`
 	Host string `arg:"-a" default:"127.0.0.1" help:"host to bind to"`
 	Port string `arg:"-p" default:"5000"      help:"port to serve on"`
 }
